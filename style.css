@@ -1,0 +1,131 @@
+body{
+    font-size: 15px;
+    font-family: poppins;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aliceblue;
+}
+header{
+    width: 500px;
+    height: auto;
+}
+
+header h2{
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 30px;
+}
+header h3{
+    font-weight: 600;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+header>p{
+    
+    text-align: center;
+    opacity: 0.7;
+    margin-top:0 ;
+}
+.container {
+    height: 600px;
+    width: 100%;
+    margin: 100px 30%;
+    display: flex;
+    justify-content: center;
+}
+.container div{
+    width: 330px;
+    height: 250px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: white;
+}
+.container{
+    display: flex;
+    gap: 30px;
+}
+.card-supervisor{
+    margin: auto 0;
+    border-top: 5px solid #47d2d1;
+}
+#builder-and-karma{
+    background-color: aliceblue;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.card-calculator{
+    margin: auto 0;
+    border-top: 5px solid #639ad8;
+}
+.card-builder{
+    border-top: 5px solid #ed5251;
+    width: 330px;
+    height: 250px;
+}
+.card-karma{
+    border-top: 5px solid #fdad48;
+}
+
+.container h3{
+    font-weight: 600;
+}
+.container p{
+    font-size: 15px;
+    opacity: 0.8;
+}
+.container div {
+    position: relative; /* Sets the positioning context */
+}
+.container div img {
+    position: absolute;
+    bottom: 30px; /* Place image near the bottom */
+    right: 30px; /* Place image near the right edge */
+    width: 50px; /* Adjust size */
+    height: auto; /* Maintain aspect ratio */
+}
+@media (max-width: 768px) {
+    header{
+        padding-left: 10px;
+        height: auto;
+    }
+    header>p{
+        width: 80%;
+        text-align: center;
+        margin-left: 10%;
+    }
+    .container {
+        padding-left: 10px;
+        height: auto;
+        flex-direction: column; 
+        align-items: center; 
+        gap: 20px; 
+    }
+    .container div {    
+        width: 90%; 
+        max-width: 330px; 
+        margin: 0;
+        height: auto;
+        min-height: 250px;
+
+    }
+    #builder-and-karma {
+        flex-direction: column; 
+        height: auto;
+        align-items: center; 
+        gap: 20px; /
+        
+    }
+    #builder-and-karma .card-builder,
+    #builder-and-karma .card-karma {
+        width: 90%; 
+        max-width: 330px;
+    }
+}
+
+
